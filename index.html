@@ -5,8 +5,10 @@
   	<meta name="description" content="Your description goes here">
   	<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<title>Blank Template</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<title>Responsive HTML Email</title>
 
 		<!-- external CSS link -->
 		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
@@ -15,7 +17,7 @@
 
 	<body>
     <!-- The main table  -->
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td>
           <!-- Start of 600px container table -->
@@ -24,15 +26,15 @@
             <tr>
               <td>
                 <!-- Create another table -->
-                <table class="container" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #8ff9fb; background: -moz-linear-gradient(-45deg, #8ff9fb 0%, #4993e0 100%);background: -webkit-linear-gradient(-45deg, #8ff9fb 0%,#4993e0 100%); background: linear-gradient(135deg, #8ff9fb 0%,#4993e0 100%);">
+                <table class="container" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="font-family: 'Open Sans', sans-serif;background: #8ff9fb; background: -moz-linear-gradient(-45deg, #8ff9fb 0%, #4993e0 100%);background: -webkit-linear-gradient(-45deg, #8ff9fb 0%,#4993e0 100%); background: linear-gradient(135deg, #8ff9fb 0%,#4993e0 100%);">
                   <!-- Left column -->
                   <tr>
-                    <td>
+                    <td style="font-family: 'Open Sans', sans-serif;color:white;">
                       <img src="img/logo.png" alt="logo">
                       <!-- Add h2 -->
-                      <h2>Get ready for</h2>
+                      <h2 style="font-size:30px;margin:0; font-weight:300; line-height: 1;">Get ready for</h2>
                       <!-- Add h1 -->
-                      <h1>Hero</h1>
+                      <h1 style="font-size:80px; margin:0;line-height: 1;">Hero</h1>
                       <!-- Add Paragraph -->
                       <p>A complete breakdown of the CSS support for the most popular mobile, web and desktop email clients on the planet.</p>
                       <!-- Add button -->
@@ -59,6 +61,7 @@
                           </td>
                         </tr>
                       </table>
+                      <img src="img/smartwatch.png" alt="">
                     </td>
                   </tr>
                 </table>
