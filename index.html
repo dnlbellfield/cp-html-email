@@ -13,6 +13,154 @@
 		<!-- external CSS link -->
 		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
 		<link rel="stylesheet" href="css/style.css">
+    <style>
+
+             /* DESKTOP */
+      @media  (min-width: 960px){
+        .left-column-cell {
+          padding-bottom: 26px;
+          /* border: 5px solid red; */
+        }
+        .container {
+          width: 960px;
+        }
+
+        .lets-you-row .left-column{
+          padding: 20px 40px !important;
+        }
+
+        .lets-you-row .middle-column{
+          padding: 20px 40px !important;
+        }
+
+        .lets-you-row .right-column{
+          padding: 20px 40px !important;
+        }
+
+        .advance-table .left-column {
+          padding: 20px 80px !important;       
+        }
+        
+        .advance-table .right-column {
+          padding: 20px 80px !important;       
+        }
+
+
+        .one-solution-table {
+          text-align: center;
+        }
+
+        .one-solution-table img {
+          max-width: 611px;
+        }
+
+        /* .short-blurb {
+          padding: 20px 40px;
+        } */
+       
+        .joined-together-table .left-column {
+          padding: 20px 40px !important;
+        }
+        .joined-together-table .middle-column {
+          padding: 20px 40px !important;
+        }
+        .joined-together-table .right-column {
+          padding: 20px 40px !important;
+        }
+
+   
+      }
+
+
+            /* MIDSIZES */
+      @media  (max-width: 960px){
+        .container {
+          width: 600px;
+        }
+      }
+
+      
+            /* MOBILE */
+      @media   (max-width:600px){
+        .container {
+          width: 100%;
+        }
+
+        .header-left {
+          padding: 36px 50px !important;
+          width: 100%;
+          /* text-align: center; */
+        }
+
+        .header-right {
+          width: 100%;
+          /* text-align: center; */
+        }
+
+        .lets-you-row .left-column {
+          width: 50%;
+        }
+        .lets-you-row .middle-column {
+          width: 50%;
+        }
+        .lets-you-row .right-column {
+          width: 100%;
+        }
+
+        .advance-table .img-head{
+          width: 100%
+        }
+
+        .advance-table .left-column{
+          padding: 20px 50px !important;
+          width: 100%;
+        }
+
+        .advance-table .right-column {
+          padding: 20px 50px !important;
+          width: 100%;
+        }
+
+        .advance-table .left-column .left-store {
+          width: 100%;
+          text-align: center;
+        }
+
+        .advance-table .right-column .right-store {
+          width: 100%;
+          text-align: center;
+        }
+
+
+        .joined-together-table .left-column {
+          width: 100%;
+          padding: 20px 40px !important;
+        }
+        .joined-together-table .middle-column {
+          width: 100%;
+          padding: 20px 40px !important;
+        }
+        .joined-together-table .right-column {
+          width: 100%;
+          padding: 20px 40px !important;
+        }
+
+        .details-table .one-row-table .left-column {
+          width: 100%;
+          padding: 20px 40px !important;
+
+        }
+
+        .details-table .one-row-table .right-column {
+          padding: 20px 40px !important;
+
+          width: 100%;
+        }
+
+      }
+
+    </style>
+
 	</head>
 
 	<body style="background: black; margin: 0;">
@@ -29,7 +177,7 @@
                 <table class="header-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="font-family: 'Open Sans', sans-serif;background: #8ff9fb; background: -moz-linear-gradient(-45deg, #8ff9fb 0%, #4993e0 100%);background: -webkit-linear-gradient(-45deg, #8ff9fb 0%,#4993e0 100%); background: linear-gradient(135deg, #8ff9fb 0%,#4993e0 100%);padding:15px 15px 70px 15px;">
                     <!-- the left column row -->
                   <tr>
-                    <td style="font-family: 'Open Sans', sans-serif;color:white;">
+                    <td style="font-family: 'Open Sans', sans-serif;color:white;" class="left-column-cell">
                       <img src="img/logo.png" alt="logo">
                       <!-- Add h2 font-size, font-weight, margin, line-height-->
                       <h2 style="padding:25px 0 10px;font-size:30px;margin:0; font-weight:300; line-height: 1;">Get ready for</h2>
@@ -48,8 +196,8 @@
                 <table class="header-right" width="50%" align="right" cellspacing="0" cellpadding="0" border="0" style="background: white">
                   <!-- the right column row -->
                   <tr>
-                    <td style="font-family: 'Open Sans', sans-serif; color:#7d7d7d;">
-                      <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px;">
+                    <td style="font-family: 'Open Sans', sans-serif; color:#7d7d7d;" class="right-column-cell">
+                      <table class="menu-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px;">
                         <tr>
                             <!-- Add links in here -->
                           <td align="center" >
@@ -179,7 +327,7 @@
                 <table class="advance-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="font-family: 'Open Sans', sans-serif; background:white;padding:15px;">
                   <tr>
                     <td  align="center" style="font-family: 'Open Sans', sans-serif; color:#333333;padding:36px 0 5px 0;  font-weight: 300; font-size: 24px; padding: 50px 0 0 0;">
-                      <img src="img/image_head.jpg" alt="image">
+                      <img class ="img-head" src="img/image_head.jpg" alt="image">
                     </td>
                   </tr>
                   <tr>
@@ -194,14 +342,14 @@
                       <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="font-family: 'Open Sans', sans-serif; background:white;padding:15px;">
                         <tr>
                           <td>
-                            <p style="font-style: italic; font-size:14px; font-weight: 300; margin:0;line-height: 1.8; padding: 0 0 30px;">
+                            <p style="font-style: italic; font-size:14px; font-weight: 300;color: #7d7d7d; margin:0;line-height: 1.8; padding: 0 0 30px;">
                               With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy.
                             </p>
                           </td>
                         </tr>
                         <tr>
-                          <td align="right">
-                            <img src="img/appstore.png" alt="appstore">
+                          <td class="left-store" align="right">
+                            <img  src="img/appstore.png" alt="appstore">
                           </td>
                         </tr>
                       </table>
@@ -209,14 +357,14 @@
                       <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="font-family: 'Open Sans', sans-serif; background:white;padding:15px;">
                         <tr>
                           <td align="left">
-                            <p style="font-style: italic; font-size:14px; font-weight: 300; margin:0;line-height: 1.8; padding: 0 0 30px;">
+                            <p style="font-style: italic; font-size:14px; font-weight: 300; margin:0; color: #7d7d7d; line-height: 1.8; padding: 0 0 30px;">
                               With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy.
                             </p>
                           </td>
                         </tr>
                         <tr>
-                          <td>
-                            <img src="img/playstore.png" alt="appstore">
+                          <td class="right-store">
+                            <img  src="img/playstore.png" alt="appstore">
                           </td>
                         </tr>
                       </table>
@@ -268,8 +416,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
-                          <p align="center" style="font-family: 'Open Sans', sans-serif; color:#7f8887; font-weight: 300; font-size: 14px;line-height: 1.8; padding: 5px; margin: 0;"> It is aimed at helping folx launch a new career in .. </p>
+                        <td class="short-blurb">
+                          <p align="center" style="font-family: 'Open Sans', sans-serif; color:#7f8887; font-weight: 300; font-size: 14px;line-height: 1.8; padding: 5px; margin: 0;">
+                             It is aimed at helping folx launch a new career in .. 
+                          </p>
                         </td>
                       </tr>
                       <tr>
@@ -295,8 +445,10 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
-                            <p align="center" style="font-family: 'Open Sans', sans-serif; color:#7f8887; font-weight: 300; font-size: 14px;line-height: 1.8; padding: 5px; margin: 0;"> It is aimed at helping folx launch a new career in .. </p>
+                          <td class="short-blurb">
+                            <p align="center" style="font-family: 'Open Sans', sans-serif; color:#7f8887; font-weight: 300; font-size: 14px;line-height: 1.8; padding: 5px; margin: 0;"> 
+                              It is aimed at helping folx launch a new career in .. 
+                            </p>
                           </td>
                         </tr>
                         <tr>
@@ -322,8 +474,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
-                          <p align="center" style="font-family: 'Open Sans', sans-serif; color:#7f8887; font-weight: 300; font-size: 14px;line-height: 1.8; padding: 5px; margin: 0;"> It is aimed at helping folx launch a new career in .. </p>
+                        <td class="short-blurb">
+                          <p align="center" style="font-family: 'Open Sans', sans-serif; color:#7f8887; font-weight: 300; font-size: 14px;line-height: 1.8; padding: 5px; margin: 0;"> 
+                            It is aimed at helping folx launch a new career in ..
+                          </p>
                         </td>
                       </tr>
                       <tr>
@@ -557,27 +711,38 @@
                         <tr>
                           <!-- INSERT multiple td's that contain imgs - representing icons  -->
                           <td align="center">
-                            <img src="img/twitter_icon.png" alt="twitter logo">  
+                            <a href="https://twitter.com/">                           
+                               <img src="img/twitter_icon.png" alt="twitter logo">  
+                            </a>
                           </td>
                           <td align="center">
-                            <img src="img/facebook_icon.png" alt="twitter logo">  
+                            <a href="https://www.facebook.com/">
+                              <img src="img/facebook_icon.png" alt="twitter logo">  
+                            </a>
+                          
                           </td>
                           <td align="center">
-                            <img src="img/google_icon.png" alt="twitter logo">  
+                            <a href="https://www.google.com">
+                              <img src="img/google_icon.png" alt="twitter logo">  
+                            </a>
                           </td>
                           <td align="center">
-                            <img src="img/pinterest_icon.png" alt="twitter logo">  
+                            <a href="https://www.pinterest.com/">
+                              <img src="img/pinterest_icon.png" alt="twitter logo">  
+                            </a>
                           </td>
                           <td align="center">
-                            <img src="img/linkedin_icon.png" alt="twitter logo">  
+                            <a href="https://www.linkedin.com/">
+                              <img src="img/linkedin_icon.png" alt="twitter logo">  
+                            </a>
                           </td>
                           <td align="center">
-                            <img src="img/youtube_icon.png" alt="twitter logo">  
+                            <a href="https:/www.youtube.com">
+                              <img src="img/youtube_icon.png" alt="twitter logo">  
+                            </a>
                           </td>
                         </tr>
- 
-                        </tr>
-                      </table>
+                    </table>
                     </td>
                   </tr>
                   <tr>
@@ -590,7 +755,7 @@
             </tr>
             <!-- End of footer row  (row 8) -->
           </table>
-           <!-- End of 600px container table -->
+          <!-- End of 600px container table -->
         </td>
       </tr>
     </table>
